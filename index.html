@@ -1,0 +1,62 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+       <link rel="stylesheet" href="index.css">
+       <!-- Google fonts -->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">  
+        <!-- Font awesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="hero">
+                <h1 class="main-title">Jimmy’s Diner</h1>
+                <h2 class="main-desc">The best burgers and pizzas in town.</h2>
+            </div>
+            <div class="menu">
+            </div>
+            <div class="order-summary hidden">
+                <p class="center-text regular-text">Your order</p>
+                <div class="ordered-items">
+                    <div class="ordered-item">
+                        <p class="regular-text">Pizza</p>
+                        <p class="remove-text">remove</p>
+                        <p class="price-right price-text">$14</p>
+                    </div>
+                    <div class="ordered-item">
+                        <p class="regular-text">Beer</p>
+                        <p class="remove-text">remove</p>
+                        <p class="price-right price-text">$12</p>
+                    </div>
+                </div>
+                <div class="total-price">
+                    <p class="regular-text">Total price:</p>
+                    <p class="price-right price-text" id="total-price">$26</p>
+                </div>
+                <button class="wide-btn" id="order-btn">Complete order</button>
+            </div> 
+            <div class="confirm-container hidden">
+                <div class="confirm">
+                    <p class="confirm-text">Thanks, James! Your order is on its way!</p>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="payment-modal hidden">
+            <p class="modal-title">Enter card details</p>
+            <form class="modal-form">
+                <div class="modal-inputs">
+                    <input type="text" class="modal-input" placeholder="Enter your name" name="username" id="username">
+                    <input type="text" class="modal-input" placeholder="Enter card number" name="card-number" id="card-number">
+                    <input type="text" class="modal-input" placeholder="Enter your name" name="cvv" id="cvv">
+                </div>
+                <button type="submit" class="wide-btn" id="pay-btn">Pay</button>
+            </form>
+        </div>
+	    <script src="index.js" type="module"></script>
+    </body>
+</html>
+
