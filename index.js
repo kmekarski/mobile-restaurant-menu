@@ -29,10 +29,6 @@ document.addEventListener('click', (e) => {
 modalForm.addEventListener('submit', (e) => {
     e.preventDefault()
 
-    document.getElementById('username').value = ''
-    document.getElementById('card-number').value = ''
-    document.getElementById('cvv').value = ''
-
     orderArray = []
     paymentModalEl.classList.add('hidden')
     orderSummaryEl.classList.add('hidden')
@@ -62,6 +58,9 @@ function handleRemoveItemClick(itemId) {
 }
 
 function handleOrderBtnClick() {
+    document.getElementById('username').value = ''
+    document.getElementById('card-number').value = ''
+    document.getElementById('cvv').value = ''
     paymentModalEl.classList.remove('hidden')
 }
 
