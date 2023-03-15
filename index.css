@@ -226,3 +226,9 @@ body{
 .hidden {
     display: none;
 }
+
+.add-icon,
+.remove-text,
+button {
+    cursor: pointer;
+}

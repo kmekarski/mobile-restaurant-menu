@@ -38,9 +38,6 @@
                 <button class="wide-btn" id="order-btn">Complete order</button>
             </div> 
             <div class="confirm-container hidden">
-                <div class="confirm">
-                    <p class="confirm-text">Thanks, James! Your order is on its way!</p>
-                </div>
             </div>
 
 
@@ -49,9 +46,27 @@
             <p class="modal-title">Enter card details</p>
             <form class="modal-form">
                 <div class="modal-inputs">
-                    <input type="text" class="modal-input" placeholder="Enter your name" name="username" id="username">
-                    <input type="text" class="modal-input" placeholder="Enter card number" name="card-number" id="card-number">
-                    <input type="text" class="modal-input" placeholder="Enter your name" name="cvv" id="cvv">
+                    <input 
+                    type="text" 
+                    class="modal-input" 
+                    placeholder="Enter your name" 
+                    name="username" 
+                    id="username" 
+                    required>
+                    <input 
+                    type="text" 
+                    class="modal-input" 
+                    placeholder="Enter card number" 
+                    name="card-number" 
+                    id="card-number" 
+                    required>
+                    <input 
+                    type="text" 
+                    class="modal-input" 
+                    placeholder="Enter CVV" 
+                    name="cvv" 
+                    id="cvv" 
+                    required>
                 </div>
                 <button type="submit" class="wide-btn" id="pay-btn">Pay</button>
             </form>
